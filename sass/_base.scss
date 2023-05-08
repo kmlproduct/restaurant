@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(231, 229, 229);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 1130px) {
+  .container {
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: auto;
+    padding: 10px;
+  }
+}

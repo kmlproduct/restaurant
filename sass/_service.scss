@@ -1,0 +1,122 @@
+.service {
+  .service-header {
+    text-align: center;
+    margin-bottom: 112px;
+    h4 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #2a333e;
+    }
+    h1 {
+      font-family: "Abhaya Libre ExtraBold";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 100px;
+      letter-spacing: -0.08em;
+      color: #ea0000;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 180px;
+        height: 180px;
+        filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07))
+          drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481))
+          drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185))
+          drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.035))
+          drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815))
+          drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519));
+      }
+      .rating {
+        display: flex;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .origin-food {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #2a333e;
+      }
+      .hot {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+        color: #2a333e;
+      }
+      .btn {
+        background: #ea0000;
+        box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+          0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+          0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+          0px 20px 13px rgba(234, 0, 37, 0.05),
+          0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+          0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+        border-radius: 10px;
+        padding: 13px 40px;
+        min-width: 202px;
+        display: flex;
+        justify-content: space-between;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #f9f9f9;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .service {
+    .service-header {
+      h4 {
+      }
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  .service {
+    .service-header {
+      margin-bottom: 35px;
+      h4 {
+      }
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
