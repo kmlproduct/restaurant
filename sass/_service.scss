@@ -3,7 +3,6 @@
     text-align: center;
     margin-bottom: 112px;
     h4 {
-      font-family: "Poppins";
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -53,7 +52,6 @@
         }
       }
       .origin-food {
-        font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -62,7 +60,6 @@
         color: #2a333e;
       }
       .hot {
-        font-family: "Poppins";
         font-style: normal;
         font-weight: 700;
         font-size: 28px;
@@ -84,14 +81,20 @@
         display: flex;
         justify-content: space-between;
         clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        transition: all 0.1s ease-in;
         span {
-          font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
           font-size: 12px;
           line-height: 18px;
           text-align: center;
           color: #f9f9f9;
+        }
+        &:hover {
+          background: #2a333e;
+          color: white;
+          cursor: pointer;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
         }
       }
     }

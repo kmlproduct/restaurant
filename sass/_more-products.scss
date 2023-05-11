@@ -1,0 +1,305 @@
+.more-products {
+  margin-top: 100px;
+  display: flex;
+  .food-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    min-width: 30%;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3.65px;
+      height: 100%;
+      background: #ea0000;
+      opacity: 0.3;
+      right: 0px;
+      top: 0;
+    }
+    .category {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      gap: 30px;
+      padding: 5px 5px;
+
+      img {
+        width: 41px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        border-radius: 5px;
+      }
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14.61px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #2a333e;
+        opacity: 0.5;
+      }
+    }
+    .active {
+      background: #ea0000;
+      box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+        0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+        0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+        0px 20px 13px rgba(234, 0, 37, 0.05),
+        0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+        0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+      //   border-radius: 10px;
+      clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: relative;
+
+      div {
+        background-color: white;
+      }
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+  .food-screen {
+    width: 80%;
+    height: 560.33px;
+    display: flex;
+    justify-content: flex-end;
+    .bg {
+      width: 90%;
+      height: 521.09px;
+      background-color: #fef2f2;
+      border-radius: 30.4376px;
+
+      padding: 60px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .ment {
+        position: absolute;
+        width: 81px;
+        height: 49px;
+        top: -30px;
+        right: 246px;
+      }
+      .next-btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 60px;
+        top: 19.48px;
+        left: 26.4px;
+        div {
+          width: 9.87px;
+          height: 9.87px;
+          background-color: rgb(17, 17, 17);
+          border-radius: 50%;
+        }
+        .active {
+          background: #ff5829;
+        }
+        .second {
+          background: #80c03d;
+          opacity: 0.2;
+        }
+        .third {
+          background: #e6f2d8;
+        }
+      }
+      .fast-food {
+        width: 294.64px;
+        height: 43.83px;
+        background: #ffdad7;
+        border: 1.2175px solid #fcc7c3;
+        border-radius: 60.8751px;
+        position: relative;
+
+        input {
+          width: 100%;
+          height: 100%;
+          border-radius: 60.8751px;
+          outline: none;
+          border: none;
+          padding: 12px 19px;
+          &::placeholder {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #2a333e;
+          }
+        }
+        .delivery {
+          width: 68.79px;
+          position: absolute;
+          top: -11px;
+          right: -9px;
+        }
+      }
+      h1 {
+        font-family: "Abhaya Libre ExtraBold";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 62px;
+        letter-spacing: -0.06em;
+        color: #ea0000;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.61px;
+        line-height: 34px;
+        color: #2a333e;
+      }
+      .btn {
+        background: #2a333e;
+        box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
+          0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
+          0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
+          0px 20px 13px rgba(68, 68, 68, 0.05),
+          0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
+          0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+        border-radius: 10px;
+        padding: 19px 23px;
+        max-width: 171px;
+        margin-top: 40px;
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 19px;
+          /* identical to box height, or 108% */
+
+          text-align: center;
+
+          color: #ffffff;
+        }
+      }
+      img {
+        position: absolute;
+        width: 263px;
+        top: 297px;
+        right: -27px;
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .more-products {
+    .food-category {
+    }
+    .food-screen {
+      .bg {
+        width: 100%;
+        height: 100%;
+
+        .next-btn {
+          top: 9.48px;
+        }
+        h1 {
+          font-size: 58px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 774px) {
+  .more-products {
+    .food-category {
+    }
+    .food-screen {
+      .bg {
+        width: 100%;
+        height: 100%;
+
+        .next-btn {
+          top: 9.48px;
+        }
+        h1 {
+          font-size: 36px;
+          line-height: 42px;
+        }
+        p {
+          line-height: 24px;
+        }
+        img {
+          width: 170px;
+          top: 327px;
+          right: -3px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 674px) {
+  .more-products {
+    .food-category {
+    }
+    .food-screen {
+      .bg {
+        padding: 60px 0 0 20px;
+
+        .next-btn {
+          top: 9.48px;
+        }
+        h1 {
+          font-size: 36px;
+          line-height: 42px;
+        }
+        p {
+          line-height: 24px;
+        }
+        img {
+          width: 170px;
+          top: 327px;
+          right: -3px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .more-products {
+    flex-wrap: wrap;
+    gap: 100px;
+    .food-category {
+      width: 100%;
+    }
+    .food-screen {
+      width: 100%;
+      .bg {
+        padding: 30px 0;
+        justify-content: space-around;
+        gap: 10px;
+        .ment {
+          right: 0;
+        }
+        img {
+          width: 124px;
+          top: 380px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .bg {
+    .ment {
+    }
+    img {
+      display: none;
+    }
+  }
+}

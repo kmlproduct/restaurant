@@ -135,7 +135,6 @@
 }
 
 body {
-  background-color: rgb(231, 229, 229);
   font-family: "Poppins", sans-serif;
 }
 
@@ -161,7 +160,7 @@ body {
 .slider {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 50px 0;
 }
 .slider .left-section {
   width: 50%;
@@ -193,7 +192,6 @@ body {
   opacity: 1;
 }
 .slider .left-section .section .text h4 {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -215,7 +213,6 @@ body {
   margin-bottom: 41px;
 }
 .slider .left-section .section .text p {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -231,7 +228,6 @@ body {
 .slider .left-section .section .text .btns .btn {
   text-align: center;
   padding: 18px 45px;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -258,7 +254,6 @@ body {
 }
 .slider .left-section .section .text .work-time .lunch-time h3,
 .slider .left-section .section .text .work-time .diner-time h3 {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -267,7 +262,6 @@ body {
 }
 .slider .left-section .section .text .work-time .lunch-time span,
 .slider .left-section .section .text .work-time .diner-time span {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -356,7 +350,6 @@ body {
   margin-bottom: 112px;
 }
 .service .service-header h4 {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -400,7 +393,6 @@ body {
   height: 15px;
 }
 .service .cards .card .origin-food {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -409,7 +401,6 @@ body {
   color: #2a333e;
 }
 .service .cards .card .hot {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -427,15 +418,22 @@ body {
   justify-content: space-between;
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
           clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  transition: all 0.1s ease-in;
 }
 .service .cards .card .btn span {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   text-align: center;
   color: #f9f9f9;
+}
+.service .cards .card .btn:hover {
+  background: #2a333e;
+  color: white;
+  cursor: pointer;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 @media (max-width: 970px) {
@@ -449,5 +447,451 @@ body {
   }
   .service .service-header h1 {
     font-size: 40px;
+  }
+}
+.more-products {
+  margin-top: 100px;
+  display: flex;
+}
+.more-products .food-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  min-width: 30%;
+  position: relative;
+}
+.more-products .food-category::before {
+  content: "";
+  position: absolute;
+  width: 3.65px;
+  height: 100%;
+  background: #ea0000;
+  opacity: 0.3;
+  right: 0px;
+  top: 0;
+}
+.more-products .food-category .category {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 30px;
+  padding: 5px 5px;
+}
+.more-products .food-category .category img {
+  width: 41px;
+}
+.more-products .food-category .category div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-radius: 5px;
+}
+.more-products .food-category .category span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.61px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #2a333e;
+  opacity: 0.5;
+}
+.more-products .food-category .active {
+  background: #ea0000;
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+.more-products .food-category .active div {
+  background-color: white;
+}
+.more-products .food-category .active span {
+  color: #ffffff;
+}
+.more-products .food-screen {
+  width: 80%;
+  height: 560.33px;
+  display: flex;
+  justify-content: flex-end;
+}
+.more-products .food-screen .bg {
+  width: 90%;
+  height: 521.09px;
+  background-color: #fef2f2;
+  border-radius: 30.4376px;
+  padding: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.more-products .food-screen .bg .ment {
+  position: absolute;
+  width: 81px;
+  height: 49px;
+  top: -30px;
+  right: 246px;
+}
+.more-products .food-screen .bg .next-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 60px;
+  top: 19.48px;
+  left: 26.4px;
+}
+.more-products .food-screen .bg .next-btn div {
+  width: 9.87px;
+  height: 9.87px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 50%;
+}
+.more-products .food-screen .bg .next-btn .active {
+  background: #ff5829;
+}
+.more-products .food-screen .bg .next-btn .second {
+  background: #80c03d;
+  opacity: 0.2;
+}
+.more-products .food-screen .bg .next-btn .third {
+  background: #e6f2d8;
+}
+.more-products .food-screen .bg .fast-food {
+  width: 294.64px;
+  height: 43.83px;
+  background: #ffdad7;
+  border: 1.2175px solid #fcc7c3;
+  border-radius: 60.8751px;
+  position: relative;
+}
+.more-products .food-screen .bg .fast-food input {
+  width: 100%;
+  height: 100%;
+  border-radius: 60.8751px;
+  outline: none;
+  border: none;
+  padding: 12px 19px;
+}
+.more-products .food-screen .bg .fast-food input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a333e;
+}
+.more-products .food-screen .bg .fast-food input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a333e;
+}
+.more-products .food-screen .bg .fast-food .delivery {
+  width: 68.79px;
+  position: absolute;
+  top: -11px;
+  right: -9px;
+}
+.more-products .food-screen .bg h1 {
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 62px;
+  letter-spacing: -0.06em;
+  color: #ea0000;
+}
+.more-products .food-screen .bg p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.61px;
+  line-height: 34px;
+  color: #2a333e;
+}
+.more-products .food-screen .bg .btn {
+  background: #2a333e;
+  box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1), 0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259), 0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407), 0px 20px 13px rgba(68, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593), 0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+  border-radius: 10px;
+  padding: 19px 23px;
+  max-width: 171px;
+  margin-top: 40px;
+}
+.more-products .food-screen .bg .btn span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  /* identical to box height, or 108% */
+  text-align: center;
+  color: #ffffff;
+}
+.more-products .food-screen .bg img {
+  position: absolute;
+  width: 263px;
+  top: 297px;
+  right: -27px;
+}
+
+@media (max-width: 970px) {
+  .more-products .food-screen .bg {
+    width: 100%;
+    height: 100%;
+  }
+  .more-products .food-screen .bg .next-btn {
+    top: 9.48px;
+  }
+  .more-products .food-screen .bg h1 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 774px) {
+  .more-products .food-screen .bg {
+    width: 100%;
+    height: 100%;
+  }
+  .more-products .food-screen .bg .next-btn {
+    top: 9.48px;
+  }
+  .more-products .food-screen .bg h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .more-products .food-screen .bg p {
+    line-height: 24px;
+  }
+  .more-products .food-screen .bg img {
+    width: 170px;
+    top: 327px;
+    right: -3px;
+  }
+}
+@media (max-width: 674px) {
+  .more-products .food-screen .bg {
+    padding: 60px 0 0 20px;
+  }
+  .more-products .food-screen .bg .next-btn {
+    top: 9.48px;
+  }
+  .more-products .food-screen .bg h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .more-products .food-screen .bg p {
+    line-height: 24px;
+  }
+  .more-products .food-screen .bg img {
+    width: 170px;
+    top: 327px;
+    right: -3px;
+  }
+}
+@media (max-width: 600px) {
+  .more-products {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .more-products .food-category {
+    width: 100%;
+  }
+  .more-products .food-screen {
+    width: 100%;
+  }
+  .more-products .food-screen .bg {
+    padding: 30px 0;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .more-products .food-screen .bg .ment {
+    right: 0;
+  }
+  .more-products .food-screen .bg img {
+    width: 124px;
+    top: 380px;
+  }
+}
+@media (max-width: 600px) {
+  .bg img {
+    display: none;
+  }
+}
+.best-saller {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.best-saller .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.best-saller .header h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2a333e;
+}
+.best-saller .header h1 {
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #ea0000;
+}
+.best-saller .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 40px;
+}
+.best-saller .cards .card {
+  border: 1.2px solid #efefef;
+  box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 10px 28px;
+  width: 215px;
+  flex: 1;
+}
+.best-saller .cards .card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.best-saller .cards .card .image img {
+  width: 185px;
+}
+.best-saller .cards .card .card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.best-saller .cards .card .card-1 .rating {
+  display: flex;
+  gap: 3px;
+}
+.best-saller .cards .card .card-1 .rating img {
+  width: 15px;
+}
+.best-saller .cards .card .card-1 .card-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.best-saller .cards .card .card-1 .card-footer .price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2a333e;
+}
+.best-saller .cards .card .card-1 .card-footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.best-saller .cards .card .card-1 .card-footer .icons div {
+  width: 32px;
+  height: 32px;
+  background: #ea0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+  border-radius: 10px;
+}
+.best-saller .cards .card .card-1 .card-footer .icons div i {
+  color: white;
+}
+
+@media (max-width: 794px) {
+  .best-saller .header h1 {
+    font-size: 46px;
+    line-height: 1;
+  }
+}
+@media (max-width: 600px) {
+  .best-saller .header h1 {
+    font-size: 26px;
+  }
+}
+.our-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+.our-app .app {
+  flex: 1;
+}
+.our-app .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
+  gap: 50px;
+}
+.our-app .content h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #2a333e;
+}
+.our-app .content h3 {
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 60px;
+  letter-spacing: -0.08em;
+  color: #ea0000;
+}
+.our-app .content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #2a333e;
+}
+.our-app .content .btn {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 400px) {
+  .our-app h3 {
+    font-size: 28px;
+  }
+  .content {
+    padding: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
