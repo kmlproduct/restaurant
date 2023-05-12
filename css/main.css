@@ -1044,13 +1044,13 @@ body {
   background-color: white;
   gap: 34px;
 }
-.newsletter .content v .header {
+.newsletter .content .header {
   text-align: center;
 }
-.newsletter .content v .header .h3 {
+.newsletter .content .header .h3 {
   position: relative;
 }
-.newsletter .content v .header .h3 h3 {
+.newsletter .content .header .h3 h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1060,7 +1060,7 @@ body {
   text-transform: uppercase;
   color: #2a333e;
 }
-.newsletter .content v .header .h3 img {
+.newsletter .content .header .h3 img {
   position: absolute;
   width: 109px;
 }
