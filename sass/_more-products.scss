@@ -175,16 +175,15 @@
         padding: 19px 23px;
         max-width: 171px;
         margin-top: 40px;
-        span {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 19px;
-          /* identical to box height, or 108% */
-
-          text-align: center;
-
-          color: #ffffff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          background-color: #ea0000;
         }
       }
       img {

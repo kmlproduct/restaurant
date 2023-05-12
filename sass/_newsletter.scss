@@ -1,5 +1,5 @@
 .newsletter {
-  margin-top: 100px;
+  // margin-top: 100px;
   display: flex;
   justify-content: center;
 
@@ -67,6 +67,25 @@
         line-height: 21px;
         right: 6px;
         top: 5px;
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          background-color: #2a333e;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 840px) {
+  .newsletter {
+    .content {
+      padding: 31px 60px;
+      .subscribe {
+        // width: 100%;
+        input {
+          // width: 100%;
+          //   width: 348px;
+        }
       }
     }
   }
@@ -75,7 +94,7 @@
 @media (max-width: 687px) {
   .newsletter {
     .content {
-      padding: 31px 60px;
+      padding: 21px 50px;
       .subscribe {
         width: 100%;
         input {
@@ -86,15 +105,26 @@
     }
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 640px) {
   .newsletter {
     .content {
       padding: 14px 9px;
       gap: 20px;
+      width: 95%;
       .header {
         h3 {
           font-size: 18px;
           line-height: 1;
+        }
+      }
+      .subscribe {
+        text-align: center;
+        input {
+          height: 40px;
+        }
+        button {
+          position: relative;
+          padding: 5px 10px;
         }
       }
     }
