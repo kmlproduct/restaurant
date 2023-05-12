@@ -75,10 +75,8 @@
     justify-content: flex-end;
     .bg {
       width: 90%;
-      height: 521.09px;
       background-color: #fef2f2;
       border-radius: 30.4376px;
-
       padding: 60px;
       position: relative;
       display: flex;
@@ -163,27 +161,28 @@
         line-height: 34px;
         color: #2a333e;
       }
-      .btn {
-        background: #2a333e;
-        box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
-          0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
-          0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
-          0px 20px 13px rgba(68, 68, 68, 0.05),
-          0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
-          0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
-        border-radius: 10px;
-        padding: 19px 23px;
-        max-width: 171px;
-        margin-top: 40px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 19px;
-        text-align: center;
-        color: #ffffff;
-        transition: all 0.1s ease-in-out;
-        &:hover {
-          background-color: #ea0000;
+      .btns {
+        .btn {
+          background: #2a333e;
+          box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
+            0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
+            0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
+            0px 20px 13px rgba(68, 68, 68, 0.05),
+            0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
+            0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+          border-radius: 10px;
+          padding: 19px 23px;
+          margin-top: 40px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background-color: #ea0000;
+          }
         }
       }
       img {
