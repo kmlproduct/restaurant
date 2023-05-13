@@ -49,9 +49,6 @@
         }
         h1 {
           width: 100%;
-          font-family: "Abhaya Libre ExtraBold";
-          font-style: normal;
-          font-weight: 800;
           font-size: 122px;
           line-height: 100px;
           letter-spacing: -0.08em;
@@ -240,7 +237,7 @@
             .btn {
               padding: 10px 20px;
               font-size: 10px;
-              width: 50%;
+              flex: 1;
             }
           }
           .work-time {
@@ -257,20 +254,16 @@
     }
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .slider {
     .left-section {
       .section {
         .text {
-          // .btns {
-          //   flex-wrap: wrap;
-
-          //   .btn {
-          //     padding: 10px 20px;
-          //     font-size: 10px;
-          //     width: 100%;
-          //   }
-          // }
+          .btns {
+            .btn {
+              flex: none;
+            }
+          }
         }
       }
     }

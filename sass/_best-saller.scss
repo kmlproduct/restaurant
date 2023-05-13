@@ -21,10 +21,7 @@
       text-transform: uppercase;
       color: #2a333e;
     }
-    h1 {
-      font-family: "Abhaya Libre ExtraBold";
-      font-style: normal;
-      font-weight: 800;
+    h2 {
       font-size: 80px;
       line-height: 80px;
       text-align: center;
@@ -160,7 +157,7 @@
 @media (max-width: 794px) {
   .best-saller {
     .header {
-      h1 {
+      h2 {
         font-size: 46px;
         line-height: 1;
       }
@@ -170,7 +167,7 @@
 @media (max-width: 600px) {
   .best-saller {
     .header {
-      h1 {
+      h2 {
         font-size: 26px;
       }
     }

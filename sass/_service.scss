@@ -15,11 +15,8 @@
     .h1 {
       position: relative;
       h1 {
-        font-family: "Abhaya Libre ExtraBold";
-        font-style: normal;
-        font-weight: 800;
         font-size: 80px;
-        line-height: 100px;
+        // line-height: 100px;
         letter-spacing: -0.08em;
         color: #ea0000;
       }
@@ -115,9 +112,11 @@
       }
       .h1 {
         h1 {
-          h1 {
-            font-size: 60px;
-          }
+          font-size: 60px;
+        }
+
+        img {
+          right: 263px;
         }
       }
     }
@@ -131,6 +130,9 @@
       .h1 {
         h1 {
           font-size: 40px;
+        }
+        img {
+          right: 129px;
         }
       }
     }
