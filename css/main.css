@@ -726,7 +726,7 @@ body {
     width: 100%;
   }
   .more-products .food-screen .bg {
-    padding: 30px 0;
+    padding: 30px 10px;
     justify-content: space-around;
     gap: 10px;
   }
@@ -1040,6 +1040,14 @@ body {
 }
 
 @media (max-width: 600px) {
+  .testimonial .header .h2 h2 {
+    font-size: 51px;
+  }
+  .testimonial .header .h2 img {
+    bottom: -24px;
+    width: 152px;
+    right: 118px;
+  }
   .testimonial .cards {
     flex-direction: column;
   }
@@ -1047,6 +1055,16 @@ body {
   .testimonial .cards .right-card {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial .header .h2 h2 {
+    font-size: 31px;
+  }
+  .testimonial .header .h2 img {
+    bottom: -4px;
+    width: 100px;
+    right: 130px;
   }
 }
 .newsletter {
@@ -1189,8 +1207,8 @@ body {
   background: #2a333e;
   top: -123px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   color: white;
   padding: 200px 10px 10px 10px;
   gap: 58px;

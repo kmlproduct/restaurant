@@ -65,6 +65,18 @@
 }
 @media (max-width: 600px) {
   .testimonial {
+    .header {
+      .h2 {
+        h2 {
+          font-size: 51px;
+        }
+        img {
+          bottom: -24px;
+          width: 152px;
+          right: 118px;
+        }
+      }
+    }
     .cards {
       flex-direction: column;
       .left-card,
@@ -76,14 +88,19 @@
   }
 }
 
-// @media (max-width: 400px) {
-//   .testimonial {
-//     .cards {
-//       flex-wrap: wrap;
-//       .left-card,
-//       .right-card {
-//         flex-direction: column;
-//       }
-//     }
-//   }
-// }
+@media (max-width: 600px) {
+  .testimonial {
+    .header {
+      .h2 {
+        h2 {
+          font-size: 31px;
+        }
+        img {
+          bottom: -4px;
+          width: 100px;
+          right: 130px;
+        }
+      }
+    }
+  }
+}
